@@ -1,0 +1,124 @@
+{
+  "module": "TMMarket",
+  "items": [
+    {
+      "name": "tv_anim",
+      "page": "supermarket_coudan",
+      "trigger": "onClick",
+      "repeatCount": 3,
+      "motions": [
+        {
+          "name": "1",
+          "beginTime": 0,
+          "key": "alpha",
+          "duration": 5000,
+          "fromValue": "0",
+          "toValue": "1",
+          "repeatCount":0,
+          "repeatMode":"",
+          "interpolator":"",
+          "evaluator":""
+        },
+        {
+          "name": "2",
+          "follow": "1",
+          "key": "rotationY",
+          "duration": 5000,
+          "fromValue": "0",
+          "toValue": "360"
+        },
+        {
+          "name": "3",
+          "follow": "1",
+          "key": "translationX",
+          "interpolator":"Accelerate",
+          "duration": 5000,
+          "fromValue": "0",
+          "toValue": "-500"
+        },
+        {
+          "name": "4",
+          "follow": "3",
+          "key": "translationX",
+          "duration": 5000,
+          "fromValue": "-500",
+          "toValue": "0"
+        },
+        {
+          "name": "5",
+          "follow": "4",
+          "key": "scaleX",
+          "duration": 5000,
+          "fromValue": "1",
+          "toValue": "3"
+        },
+        {
+          "name": "6",
+          "follow": "4",
+          "key": "scaleY",
+          "duration": 5000,
+          "fromValue": "1",
+          "toValue": "3"
+        },
+        {
+          "name": "7",
+          "follow": "6",
+          "key": "backgroundColor",
+          "duration": 5000,
+          "fromValue": "#000000FF",
+          "toValue": "#FFFF0000"
+        }
+      ]
+    },
+    {
+      "name": "tv_anim_2",
+      "page": "supermarket_coudan",
+      "repeatCount": 3,
+      "motions": [{
+        "name": "1",
+        "beginTime": 0,
+        "key": "scaleX",
+        "duration": 2000,
+        "fromValue": "0",
+        "toValue": "1",
+        "interpolator":"",
+        "evaluator":""
+      },{
+        "name": "2",
+        "beginTime": 0,
+        "key": "scaleY",
+        "duration": 2000,
+        "fromValue": "0",
+        "toValue": "1",
+        "interpolator":"",
+        "evaluator":""
+      },{
+        "name": "3",
+        "follow": "1",
+        "beginTime": 3000,
+        "key": "scaleX",
+        "duration": 500,
+        "fromValue": "1",
+        "toValue": "1.05",
+        "repeatCount":-1,
+        "repeatMode":"1",
+        "interpolator":"",
+        "evaluator":""
+      },{
+        "name": "4",
+        "follow": "1",
+        "beginTime": 3000,
+        "key": "scaleY",
+        "duration": 500,
+        "fromValue": "1",
+        "toValue": "1.05",
+        "repeatCount":-1,
+        "repeatMode":"1",
+        "interpolator":"",
+        "evaluator":""
+      }]
+    }
+  ]
+}
+
+
